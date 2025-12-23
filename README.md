@@ -56,7 +56,7 @@ python	3.9.12
 - Step2 DoubleFinder
 
   ```
-  indir='‘		# Triplet File
+  indir=''		# Triplet File
   sample=''
   outdir=''
   Rscript Doublet.R ${indir}/ ${sample} Seurat_lib.R ${outdir}/
@@ -72,7 +72,7 @@ python	3.9.12
 - Step4 plot
 
   ``` 
-  input='‘		# seurat_object
+  input=''		# seurat_object
   glist=''		# target gene list
   outdir=''
   Rscript seurat_plot.R ${input} ${glist} ${outdir} [dotplot,violin] [seurat_clusters|orig.ident|Groups] [group_order]
@@ -89,7 +89,7 @@ python	3.9.12
 - Step1 Group Diff 
 
   ``` 
-  input = '‘		# seurat_object
+  input = ''		# seurat_object
   outdir = ''
   Rscript scDiff.R ${input} ${outdir}/
   ```
@@ -148,7 +148,7 @@ python	3.9.12
 - Step1 monole2
 
   ```
-  input = '‘		# seurat_object
+  input = ''		# seurat_object
   outdir = ''
   Rscript monocle2.R  ${input} ${outdir}/
   ```
