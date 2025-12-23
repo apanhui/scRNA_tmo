@@ -1,0 +1,56 @@
+---
+FindMarkers:
+  logfc: 0.25
+  min_pct: 0.25
+  pvalue: 0.01
+Groups: &6
+  A:
+    - flowers-a
+    - flowers-b
+  B:
+    - leaves-a
+    - leaves-b
+cell_cycle:
+  is_remove: TRUE
+  is_rm_all_signal: FALSE
+cluster_resolution: 0.5
+data:
+  dir:
+    - rawdata/flowers-a
+    - rawdata/flowers-b
+    - rawdata/leaves-a
+    - rawdata/leaves-b
+  name: &7
+    - flowers-a
+    - flowers-b
+    - leaves-a
+    - leaves-b
+filter:
+  filter.cells: doublet.xls
+  set.num: none
+  set.num.seed: ~
+  standard:
+    nCount_RNA:
+      - 0
+      - 8200
+    nFeature_RNA:
+      - 220
+      - 3400
+filter_gene:
+  min.cell: 0
+  override: 
+group_order: 
+heatmap:
+  top: 5
+integration:
+  method: harmony
+marker:
+  excluded: ~
+  expected: ~
+  mito_list: ~
+  more: ~
+  plastid_list: ~
+  rrna_list: rrna_list.xls
+  vfeatures: ~
+name_list: name_list.xls
+version: 7.0
